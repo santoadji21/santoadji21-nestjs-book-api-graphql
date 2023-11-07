@@ -20,7 +20,7 @@ RUN pnpm install
 RUN pnpx prisma generate
 
 # Build the application
-RUN pnpm run build auth
+RUN pnpm run build 
 
 # Stage 2: Production the application
 FROM node:20-alpine as production

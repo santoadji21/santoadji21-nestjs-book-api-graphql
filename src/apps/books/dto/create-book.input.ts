@@ -5,6 +5,9 @@ export class CreateBookInput {
   @Field()
   title: string;
 
+  @Field({ nullable: true })
+  imageBase64?: string;
+
   @Field()
   author: string;
 
