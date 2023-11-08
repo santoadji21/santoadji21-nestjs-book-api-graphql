@@ -1,7 +1,7 @@
+import { PrismaService } from '@/prisma/prisma.service';
+import { CreateUserInput } from '@/user/dto/create-user.input';
+import { UpdateUserInput } from '@/user/dto/update-user.input';
 import { Injectable } from '@nestjs/common';
-import { CreateUserInput } from './dto/create-user.input';
-import { UpdateUserInput } from './dto/update-user.input';
-import { PrismaService } from 'src/prisma/prisma.service';
 import * as bcrypt from 'bcryptjs';
 
 @Injectable()

@@ -1,7 +1,7 @@
+import { CreateBookInput } from '@/book/dto/create-book.input';
+import { UpdateBookInput } from '@/book/dto/update-book.input';
+import { PrismaService } from '@/prisma/prisma.service';
 import { Injectable } from '@nestjs/common';
-import { CreateBookInput } from './dto/create-book.input';
-import { UpdateBookInput } from './dto/update-book.input';
-import { PrismaService } from 'src/prisma/prisma.service';
 
 @Injectable()
 export class BooksService {

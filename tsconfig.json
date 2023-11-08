@@ -18,6 +18,15 @@
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false,
-    "strict": true
+    "strict": true,
+    "paths": {
+      "@/utils/*": ["src/common/utils*"],
+      "@/guards/*": ["src/common/guards/*"],
+      "@/book/*": ["src/apps/books/*"],
+      "@/user/*": ["src/apps/users/*"],
+      "@/auth/*": ["src/apps/auth/*"],
+      "@/s3/*": ["src/apps/s3/*"],
+      "@/prisma/*": ["src/prisma/*"]
+    }
   }
 }

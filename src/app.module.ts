@@ -31,6 +31,7 @@ import * as Joi from 'joi';
         AWS_SECRET_ACCESS_KEY: Joi.string().required(),
         AWS_REGION: Joi.string().required(),
         AWS_S3_BUCKET_NAME: Joi.string().required(),
+        MAX_PAYLOAD_SIZE: Joi.number().default(10485760),
       }),
     }),
   ],

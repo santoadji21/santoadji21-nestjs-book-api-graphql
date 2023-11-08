@@ -1,12 +1,12 @@
+import { BooksService } from '@/book/books.service';
+import { CreateBookInput } from '@/book/dto/create-book.input';
+import { UpdateBookInput } from '@/book/dto/update-book.input';
+import { Book } from '@/book/entities/book.entity';
+import { JwtAuthGuard } from '@/guards/jwt-auth.guard';
+import { S3Service } from '@/s3/s3.service';
+import { decodeBase64Image } from '@/utils//decodeBase64Image';
 import { ConflictException, UseGuards } from '@nestjs/common';
 import { Args, Int, Mutation, Query, Resolver } from '@nestjs/graphql';
-import { JwtAuthGuard } from 'src/common/guards/jwt-auth.guard';
-import { decodeBase64Image } from 'src/common/utils/decodeBase64Image';
-import { S3Service } from '../s3/s3.service';
-import { BooksService } from './books.service';
-import { CreateBookInput } from './dto/create-book.input';
-import { UpdateBookInput } from './dto/update-book.input';
-import { Book } from './entities/book.entity';
 
 @Resolver(() => Book)
 @UseGuards(JwtAuthGuard)

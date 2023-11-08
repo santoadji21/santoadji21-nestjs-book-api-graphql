@@ -1,8 +1,8 @@
+import { BooksResolver } from '@/book/books.resolver';
+import { BooksService } from '@/book/books.service';
+import { PrismaModule } from '@/prisma/prisma.module';
+import { S3Module } from '@/s3/s3.module';
 import { Module } from '@nestjs/common';
-import { BooksService } from './books.service';
-import { BooksResolver } from './books.resolver';
-import { PrismaModule } from 'src/prisma/prisma.module';
-import { S3Module } from '../s3/s3.module';
 
 @Module({
   imports: [PrismaModule, S3Module],

@@ -1,7 +1,7 @@
+import { PrismaModule } from '@/prisma/prisma.module';
+import { UsersResolver } from '@/user/users.resolver';
+import { UsersService } from '@/user/users.service';
 import { Module } from '@nestjs/common';
-import { UsersService } from './users.service';
-import { UsersResolver } from './users.resolver';
-import { PrismaModule } from 'src/prisma/prisma.module';
 
 @Module({
   imports: [PrismaModule],
